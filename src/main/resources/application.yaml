@@ -1,0 +1,37 @@
+logging:
+  level:
+    com.example.ApiSuperTest: debug
+
+spring:
+  application:
+    name: capp-smoke-test
+  cloud:
+    config:
+      enabled: false
+
+apollo:
+  meta: https://xxxx.xxxx.cn
+  bootstrap:
+    enabled: true
+    namespaces: capp.xxxx, capp.xxxx
+
+---
+spring:
+  profiles: sit
+
+apollo:
+  meta: https://xxxx.xxxx.cn
+
+---
+spring:
+  profiles: uat
+
+apollo:
+  meta: https://xxxx.xxxx.cn
+
+---
+spring:
+  profiles: prod
+
+apollo:
+  meta: https://xxxx.xxxx.cn

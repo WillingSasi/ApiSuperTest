@@ -1,0 +1,58 @@
+spring:
+  datasource:
+    db1:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      username: username
+      password: password
+      jdbc-url: jdbc-url
+      hikari:
+        maximum-pool-size: 50
+        minimum-idle: 20
+      type: com.zaxxer.hikari.HikariDataSource
+    db2:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      username: username
+      password: password
+      jdbc-url: jdbc-url
+      hikari:
+        maximum-pool-size: 50
+        minimum-idle: 20
+      type: com.zaxxer.hikari.HikariDataSource
+    db3:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      username: username
+      password: password
+      jdbc-url: jdbc-url
+      hikari:
+        maximum-pool-size: 50
+        minimum-idle: 20
+      type: com.zaxxer.hikari.HikariDataSource
+
+project-config:
+  capp-url:
+    url1: https://xxxx.xxxx.cn
+    url2: https://xxxx.xxxx.cn
+    url3: https://xxxx.xxxx.cn
+    url4: https://xxxx.xxxx.cn
+
+  api-test:
+    auth:
+      username: username
+      password: password
+    login:
+      verificationCode: xxxx
+      deviceCode: xxxx
+      deviceName: xxxx
+      pin: xxxx
+      pinCode: xxxx
+    person:
+      register_name: xxxx
+      register_phoneNumber: xxxx
+      common_person: xxxx
+      register_customerIdent: xxxx
+
+  gitUrl: xxxx
+  environment: sit
+  model: online
+
+core-config:
